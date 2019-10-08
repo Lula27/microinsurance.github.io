@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8' />
     <title></title>
-    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=yes' />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.css' rel='stylesheet' />
@@ -66,25 +66,43 @@ var geojson = {
     type: 'Feature',
     geometry: {
       type: 'Point',
-      coordinates: [-77.032, 38.913]
+      coordinates: [38.836, -1.049]
     },
     properties: {
-      title: 'Mapbox',
-      description: 'Washington, D.C.'
+      title: 'Kenya',
+      description: 'Testing'
     }
   },
   {
     type: 'Feature',
     geometry: {
       type: 'Point',
-      coordinates: [-122.414, 37.776]
+      coordinates: [20.021, 41.026]
     },
     properties: {
-      title: 'Mapbox',
-      description: 'San Francisco, California'
-    }
+      title: 'Albania',
+      description: 'Testing 2'
+    },  
+  // {
+  //   type: 'Feature',
+  //   geometry: {
+  //     type: 'Point',
+  //     coordinates: [2.171, 26.944]
+  //   },
+  //   properties: {
+  //     title: 'Algeria',
+  //     description: 'Testing 3'
+  //   }
+
   }]
 };
+
+
+
+
+
+
+
 
 // JavaScript for adding markers to map
 geojson.features.forEach(function(marker) {
@@ -111,3 +129,4 @@ geojson.features.forEach(function(marker) {
 
 
 <!-- Steps to create:  https://docs.mapbox.com/help/tutorials/custom-markers-gl-js/-->
+<!-- Add points: https://docs.mapbox.com/help/tutorials/add-points-pt-1/ -->
